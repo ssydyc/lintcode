@@ -1,4 +1,5 @@
 public class Solution {
+    
     /**
      * @param A an integer array sorted in ascending order
      * @param target an integer
@@ -24,4 +25,5 @@ public class Solution {
             return left;
         }
     }
+    
 }
