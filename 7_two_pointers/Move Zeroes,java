@@ -1,0 +1,20 @@
+public class Solution {
+    /*
+     * @param nums: an integer array
+     * @return: 
+     */
+    public void moveZeroes(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return;
+        }
+        int n = nums.length;
+        int cur = 0;
+        for (int i = 0; i < n; i++) {
+            if (nums[i] != 0) {
+                int temp = nums[i];
+                nums[i] = nums[cur];
+                nums[cur++] = temp;
+            }
+        }
+    }
+}
